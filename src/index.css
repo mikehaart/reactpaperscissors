@@ -3,11 +3,35 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: tomato;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rockpaperscissors {
+  background: rgba(255,255,255, 0.4);
+  padding: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.playersides {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.playersides > div {
+  flex: 1;
+}
+
+.playersides .computer {
+  background: red;
+}
+
+.userbuttons {
+  display: flex;
+  flex-direction: column;
 }
